@@ -1,0 +1,18 @@
+- hosts: kubernetes_master
+  collections:
+          - govi230.kube_cluster
+  roles:
+          - role: "kube_master"
+            vars:
+                    container_runtime_engine: "docker"
+                    container_network_interface: "flannel"
+                    init_info:
+                            pod_network_cidr: "10.240.0.0/16"
+                            ignore_preflight_errors:
+                                    - "Mem"
+                                    - "NumCPU"
+- hosts: kubernetes_slave
+  collections:
+          - govi230.kube_cluster
+  roles:
+          - role: "kube_slave"

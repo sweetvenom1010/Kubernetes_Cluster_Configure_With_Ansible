@@ -1,0 +1,32 @@
+{
+ "collection_info": {
+  "namespace": "govi230",
+  "name": "kube_cluster",
+  "version": "1.0.0",
+  "authors": [
+   "Govind Bhardwaj <govindbhardwaj32840@gmail.com>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "kubernetes"
+  ],
+  "description": "Kubernetes Cluster",
+  "license": [
+   "GPL-2.0-or-later"
+  ],
+  "license_file": null,
+  "dependencies": {},
+  "repository": "https://github.com/govi230/Kubernetes_Cluster_Ansible_Collection.git",
+  "documentation": "http://docs.example.com",
+  "homepage": "http://example.com",
+  "issues": "https://github.com/govi230/Kubernetes_Cluster_Ansible_Collection/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "b6ea56d9e4e4d04ddd5d3bbe25ebe691748bf63a1ec429c5a485aa9b9910df2b",
+  "format": 1
+ },
+ "format": 1
+}

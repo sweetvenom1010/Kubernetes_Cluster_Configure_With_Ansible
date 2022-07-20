@@ -1,0 +1,2 @@
+- name: "Include {{ container_runtime_engine }} Installtion Task File"
+  include: "kubernetes/tasks/CREngine/{{ container_runtime_engine}}/RedHat/main.yml"

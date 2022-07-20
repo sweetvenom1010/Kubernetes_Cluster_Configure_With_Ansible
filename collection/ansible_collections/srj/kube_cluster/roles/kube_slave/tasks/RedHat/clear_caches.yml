@@ -1,0 +1,5 @@
+- name: "Clear RAM caches"
+  copy:
+          content: 3
+          dest: "/proc/sys/vm/drop_caches"
+          unsafe_writes: yes

@@ -1,0 +1,19 @@
+- name: "Docker Repo Info"
+  set_fact:
+          docker_repo_info:
+                  name: "docker"
+                  description: "Docker REPO"
+                  baseurl: "https://download.docker.com/linux/centos/7/x86_64/stable/"
+                  gpgcheck: 0
+  when: docker_repo_info is not defined
+
+- name: "Repo-creation For docker-ce"
+  yum_repository: "{{ docker_repo_info }}"
+
+- name: "Finally Install Docker Task Block"
+  block:
+          - name: "Include Task File to install docker-ce"
+            include: "type_1.yml"
+  rescue:
+          - name: "Include Task File to install docker-ce with --nobest option"
+            include: "type_2.yml"

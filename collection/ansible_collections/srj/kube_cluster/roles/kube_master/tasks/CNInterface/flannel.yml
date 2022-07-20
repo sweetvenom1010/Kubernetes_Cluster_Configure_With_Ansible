@@ -1,0 +1,7 @@
+- name: "Update FLANNEL Configuration File"
+  template:
+          src: "flannel.yml"
+          dest: "/root"
+
+- name: "Start FLANNEL"
+  command: "kubectl apply -f /root/flannel.yml"

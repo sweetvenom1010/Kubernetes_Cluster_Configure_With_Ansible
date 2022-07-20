@@ -1,0 +1,16 @@
+- name: "Make {{ ansible_facts.user_dir }}/.kube Directory For kubectl"
+  file:
+          path: "{{ ansible_facts.user_dir }}/.kube"
+          state: directory
+
+- name: "Copy 'kubeconfig' file inside {{ ansible_facts.user_dir }}/.kube Directory"
+  copy:
+          src: "/etc/kubernetes/admin.conf"
+          dest: "{{ ansible_facts.user_dir }}/.kube/config"
+          remote_src: yes
+
+- name: "Change kubeconfig file owner & group to current user"
+  file:
+          path: "{{ ansible_facts.user_dir }}/.kube/config"
+          owner: "{{ ansible_facts.user_id }}"
+          group: "{{ ansible_facts.user_id }}"

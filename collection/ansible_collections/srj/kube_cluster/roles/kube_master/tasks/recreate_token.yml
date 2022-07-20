@@ -1,0 +1,10 @@
+- name: "Delete Token"
+  kubeadm_token:
+          token: "{{ token_status.token_info.token }}"
+          action: delete
+
+- name: "Recreate Token"
+  kubeadm_token:
+          description: "good"
+          action: create
+  register: token_status

@@ -1,0 +1,18 @@
+---
+# tasks file for kubernetes
+#
+#
+- name: "Check Kubelet Installation"
+  package:
+          name: "kubelet"
+          state: present
+  register: kubelet_install_status
+  ignore_errors: true
+
+- name: "Install"
+  include: "install.yml"
+  when: kubelet_install_status.failed
+
+- name: "Include Tasks For Configure Kubernetes Slave"
+  include: "{{ ansible_facts.distribution }}/slave_config.yml"
+  when: not kubelet_install_status.failed

@@ -1,0 +1,13 @@
+- name: "Include clear_caches.yml task file"
+  include: "{{ ansible_facts.distribution }}/clear_caches.yml"
+
+- name: "Check Free RAM"
+  fail:
+          msg: "Minimum 300 MB free RAM is reuquired"
+  when: ansible_facts.memfree_mb <= 300
+
+- name: "Include {{ container_runtime_engine }} Installation Task Files"
+  include: "CREngine/{{ container_runtime_engine }}/{{ ansible_facts.distribution }}/main.yml"
+
+- name: "Install Kubernetes"
+  include: "{{ ansible_facts.distribution }}/main.yml"

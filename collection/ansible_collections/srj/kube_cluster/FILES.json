@@ -1,0 +1,761 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6e2e509165a177c9043e4d464e9933654db2570d0e570513cc5f7e3589c35caf",
+   "format": 1
+  },
+  {
+   "name": "docs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ce019c2fa0b74e9457b36287058bb0f80bde03324d1499da1a80cd4a9b7ae4e1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/kubeadm_init.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6caa05f322ec007ae12da3dad1c6188c6beabb012180c31dee360186d6043ac4",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/kubeadm_token.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ea021ead0945a161aaeff3dcd320422b9758a7ef5622050ee655a596445f2f6e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/kubelet.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79c5679dae014c4655a26173b8324a779075bfa72d8ba1f3e1d9b13c8620f796",
+   "format": 1
+  },
+  {
+   "name": "roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ff75de65bdea1cfad26a00593a3cf69a7df42077ec96b9e15862a07ffa22c9c",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "46351e48f07fcf269708fb6ffb9d84511fffb8f4620ce357a8c8621837afc6ce",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/vars/token.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1fcf683bab48cbbff12ec8826114b8dc2d278aa62198ffcd59379761e7d8430f",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CNInterface",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CNInterface/flannel.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0920ef3011f8dcf839b8e474feb544b27039dbc4cdad343ff02810f785b4c581",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/client.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b11f2906fe0487797ad7a5775efa3a15cfd1587462fa633700156655ef946761",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/destroy_token.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4acc74f658937a8179b173f5de639101205514bb1d67712da6cf6fa15338a5d7",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/recreate_token.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d99453afacb340fc9d1300dc5fbd3908e16c9152eefa3306b7d2ada7a47c528f",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CREngine",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CREngine/docker",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CREngine/docker/Amazon",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CREngine/docker/Amazon/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a31cdc4c0662efb5f74ef9b8fcab3fc28317c8b2d00e70e243cad96da37d6407",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CREngine/docker/Amazon/type_1.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "28059dcf47384503934564cd883b3a8d2c8ac38f4ff88561b081936514527b63",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CREngine/docker/Amazon/type_2.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6af6296b6e8c2902071bd008dbaf7d3573bee09d426ef59033859e5848b37bce",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CREngine/docker/RedHat",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CREngine/docker/RedHat/type_2.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9e75e2dd86d544a12ab692be936aad19e27fe3afabbc695109e2e402db5b0f70",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CREngine/docker/RedHat/type_1.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "09e557b65d74f1c150e1e3de6420a87e28c8b9cbd94b7dc161f91a7deb06d83e",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CREngine/docker/RedHat/repo_creation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "64045cf13ba417b66494fdf1a5ff5463b42800024ffabd9da5d25f801a137589",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/CREngine/docker/RedHat/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5e7346da511da704276b666631f66aa0d6f86b8fcc4e6b812d9b212d00b45de6",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/RedHat",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/RedHat/clear_caches.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f12b843ed7e8b049a1d747a436fb28c1a8fed01a132cd1192e837085f1b454f5",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/RedHat/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ad068d536bb6d793b7a583c36d30b62f8e8d172d85509b5abb4d22eabefee455",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/Amazon",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/Amazon/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d597ae07c09bbdf356d9a3642f885948327e947f6f51d0c5a165eef933e9b289",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/master.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "103b0dda19700d128e2050a866bcd21e8d34c2750036fb267bb42e19935aa4a8",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/clean_local.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "12f8fa3815b9547be7eefec2ee1b8800c98da00485edc4c60811adb443e2fe79",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7b4fa7289254ab363c457de79996eab10ef93502b85728b1fb828ad43e5f1d4f",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tasks/install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7c12884cfa83926b9dcd0b876673d8dfd904ebfa92810a4fecfa423494fe8d00",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/files/daemon.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "99b4504390b76d219abe99e18117dce2f0db4f844ccb383ba04bdbf41ca2343d",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/files/admin.conf",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a653d4798b8b0615441500883bbb8dc219f08bcfa4662333130051cc7d20f0b5",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/library",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/library/kubeadm_token.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4f93391926d430313c54dab9d51eb3ce553a2d6c1b1bda6beeebcbecdbd52d8b",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/library/kubelet.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79c5679dae014c4655a26173b8324a779075bfa72d8ba1f3e1d9b13c8620f796",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/library/.kubelet.py.swp",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eea2d27058aa9c1ab4c535a95182af7c19f9b27476bc2626b558153fcb777c9b",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/library/.kubeadm_token.py.swp",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8e66a607f624e967f288482d7ea52d406051f8e3d7c29ddb449f5e3269e84439",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/library/kubeadm_init.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ae8ce86f7e4123de72d45e1af025cf999b5039b32b1bf08d174222ddde547535",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "43e63a93716f15cdb102c201e4631be604b45910b8c749c78d89e3fc076c7c7e",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cc751d75266f757a38189f15d54e548dc87706f14a39756995c27b49eaca8a07",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e82c60136cb1895d61432dd52c83d4c6e8ad4c654a697ac2d5b5e4a288866d87",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7e618069a55593f8e371cb3afc114b536e7e1051343716ecc283b09b0dd68a0d",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tests/inventory",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e02233819b1a09844410549191813f7cc7ba360f21298578f4ba1727a27d87fc",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/tests/test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b70168e19e5c36b1aad136c2f1d8ec155c3a5eb472ec1441d21f0821ba68e38d",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_master/templates/flannel.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b52f219316e30d28178bed0585db734adf95212286f60699f6d250307ba15518",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2ff75de65bdea1cfad26a00593a3cf69a7df42077ec96b9e15862a07ffa22c9c",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a229000e25649bcff3c8b44f10cb040512db2e538d626c8eec22717919169de5",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/files/admin.conf",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9119595d7b34aa9ff99cdf089aa9c0f6fbee4de2e55a4b2b4abdf35b2bfd0f3f",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/files/daemon.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "99b4504390b76d219abe99e18117dce2f0db4f844ccb383ba04bdbf41ca2343d",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "13f2f2eb41f647ed84e5d04c94ad3f6eddd4e79da9246edd102aaad82bff6b98",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/library",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/library/kubeadm_token.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4f93391926d430313c54dab9d51eb3ce553a2d6c1b1bda6beeebcbecdbd52d8b",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/library/kubelet.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79c5679dae014c4655a26173b8324a779075bfa72d8ba1f3e1d9b13c8620f796",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/library/.kubelet.py.swp",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eea2d27058aa9c1ab4c535a95182af7c19f9b27476bc2626b558153fcb777c9b",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/library/.kubeadm_token.py.swp",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8e66a607f624e967f288482d7ea52d406051f8e3d7c29ddb449f5e3269e84439",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/library/kubeadm_init.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "acb13843d4350208a82e78c0655b66f4fa24143983ab2a0d97e62d4ca04c74bf",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/templates/flannel.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b52f219316e30d28178bed0585db734adf95212286f60699f6d250307ba15518",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tests/inventory",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e02233819b1a09844410549191813f7cc7ba360f21298578f4ba1727a27d87fc",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tests/test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "653adf72c7bf76cbda60cafc87c57324650f968f191071ddd837aed901eaef3d",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/.travis.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "43e63a93716f15cdb102c201e4631be604b45910b8c749c78d89e3fc076c7c7e",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cc751d75266f757a38189f15d54e548dc87706f14a39756995c27b49eaca8a07",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/Amazon",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/Amazon/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d597ae07c09bbdf356d9a3642f885948327e947f6f51d0c5a165eef933e9b289",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/CREngine",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/CREngine/docker",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/CREngine/docker/RedHat",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/CREngine/docker/RedHat/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5e7346da511da704276b666631f66aa0d6f86b8fcc4e6b812d9b212d00b45de6",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/CREngine/docker/RedHat/repo_creation.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "64045cf13ba417b66494fdf1a5ff5463b42800024ffabd9da5d25f801a137589",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/CREngine/docker/RedHat/type_1.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "09e557b65d74f1c150e1e3de6420a87e28c8b9cbd94b7dc161f91a7deb06d83e",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/CREngine/docker/RedHat/type_2.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9e75e2dd86d544a12ab692be936aad19e27fe3afabbc695109e2e402db5b0f70",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/CREngine/docker/Amazon",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/CREngine/docker/Amazon/type_2.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6af6296b6e8c2902071bd008dbaf7d3573bee09d426ef59033859e5848b37bce",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/CREngine/docker/Amazon/type_1.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "28059dcf47384503934564cd883b3a8d2c8ac38f4ff88561b081936514527b63",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/CREngine/docker/Amazon/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a31cdc4c0662efb5f74ef9b8fcab3fc28317c8b2d00e70e243cad96da37d6407",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/RedHat",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/RedHat/slave_config.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7170e35e9200325b4510e822a695474cba5e0352c72d0241fdebbe986765f4ef",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/RedHat/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "46b8b31b4b8ea2b76ddbf7870e252d558fe0136ecdacc90259550bb3aff34e1b",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/RedHat/clear_caches.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f12b843ed7e8b049a1d747a436fb28c1a8fed01a132cd1192e837085f1b454f5",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/slave.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "40e0183ee73806f4ce9fc70234c63c4caf087384b0b6dd9019bea76a13a2c1ea",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80fa216527a036885f50462cb361a82cd8159df76c9eef5a1117eee8cdac6c45",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/tasks/install.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "61054d0b6869d99f932fe726c542628e58eea93a741699d0a516b3bfb41fd519",
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/kube_slave/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e82c60136cb1895d61432dd52c83d4c6e8ad4c654a697ac2d5b5e4a288866d87",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

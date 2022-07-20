@@ -1,0 +1,4 @@
+- name: "Destroy Token On Master"
+  kubeadm_token:
+          token: "{{ token_status.token_info.token }}"
+          action: delete

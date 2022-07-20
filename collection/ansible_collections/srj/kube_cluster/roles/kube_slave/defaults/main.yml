@@ -1,0 +1,23 @@
+---
+# defaults file for kubernetes
+#
+# Container Engine -- Docker By default
+container_runtime_engine: "docker"
+
+# Pod Network CIDR (Classless Inter-Domain Range)
+# pod_network_cidr
+
+# Token Creation Info
+#token_creation_info:
+#        description: "good"
+#        action: create
+
+# Container Network Interface (CNI)
+container_network_interface: "flannel"
+
+# Master Intialize Info
+init_info:
+        pod_network_cidr: "10.240.0.0/16"
+        ignore_preflight_errors:
+                - "Mem"
+                - "NumCPU"

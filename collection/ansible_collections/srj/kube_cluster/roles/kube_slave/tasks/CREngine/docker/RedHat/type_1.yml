@@ -1,0 +1,5 @@
+- name: "Install docker-ce on {{ ansible_facts.distribution }}"
+  package:
+          name: "docker-ce"
+          state: present
+  register: docker_pkg_status

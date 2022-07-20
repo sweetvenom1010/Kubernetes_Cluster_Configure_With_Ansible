@@ -1,0 +1,18 @@
+[kubernetes_master]
+192.168.34.80           ansible_ssh_pass=redhat
+
+[kubernetes_slave]
+192.168.34.14           ansible_ssh_pass=redhat
+192.168.34.173          ansible_ssh_pass=redhat
+
+
+[kubernetes_cluster:children]
+kubernetes_master
+kubernetes_slave
+
+[private_kubernetes_master]
+192.168.34.80           ansible_ssh_pass=redhat
+
+[private_kubernetes_slave]
+192.168.34.14           ansible_ssh_pass=redhat
+192.168.34.173          ansible_ssh_pass=redhat

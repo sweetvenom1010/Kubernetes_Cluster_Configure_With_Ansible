@@ -1,0 +1,12 @@
+---
+# tasks file for kubernetes
+#
+#
+- name: "Task Block for Check Kubernetes Master Initialisation"
+  command: "kubectl cluster-info"
+  register: kube_master_status
+  ignore_errors: true
+
+- name: "Include Installtion Task Files"
+  include: "install.yml"
+  when: kube_master_status.failed

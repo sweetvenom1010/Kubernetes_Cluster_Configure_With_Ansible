@@ -1,0 +1,22 @@
+- name: "Enable Briging"
+  blockinfile:
+          block: |
+                  net.bridge.bridge-nf-call-ip6tables = 1
+                  net.bridge.bridge-nf-call-iptables = 1
+          path: "{{ bridging_file_path_for_k8s }}"
+          create: True
+          marker: "# {mark} Enable Kubernetes Bridging"
+          state: present
+  register: bridge_status
+
+- name: "restart sysctl"
+  command: "sysctl --system"
+  when: bridge_status.changed
+
+# In this line One issue that it will include variable but it will not show color yellow , it will show green .
+- name: "Include token file"
+  include_vars: "token/token.json"
+
+
+- name: "Join Master Node"
+  command: "{{ join_command }}"

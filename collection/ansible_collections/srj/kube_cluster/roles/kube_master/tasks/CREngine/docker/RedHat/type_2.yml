@@ -1,0 +1,2 @@
+- name: "Install docker-ce on {{ ansible_facts.distribution }} with --nobest option"
+  command: "yum install docker-ce -y --nobest"

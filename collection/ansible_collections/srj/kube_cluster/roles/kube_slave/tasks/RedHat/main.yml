@@ -1,0 +1,36 @@
+- name: "Remove Swap From fstab"
+  mount:
+          path: "swap"
+          fstype: "swap"
+          state: absent
+  register: swap_status
+
+- name: "SwapOff"
+  command: "swapoff -a"
+  when: swap_status.changed
+
+- name: "Create Repository For Kubernetes Packages"
+  yum_repository:
+          name: "kubernetes"
+          description: "Kubernetes"
+          baseurl: 'https://packages.cloud.google.com/yum/repos/kubernetes-el7-$basearch'
+          enabled: 1
+          gpgcheck: 1
+          repo_gpgcheck: 1
+          gpgkey: 'https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg'
+
+- name: "Install 'kubeadm' , 'kubelet' , 'kubectl' and 'iproute-tc' packages"
+  package:
+          name:
+                  - "kubeadm"
+                  - "iproute-tc"
+          state: present
+
+- name: "Start And Enable 'kubelet'"
+  service:
+          name: "kubelet"
+          state: started
+          enabled: True
+
+- name: "Slave Configuration Tasks"
+  include: "slave_config.yml"

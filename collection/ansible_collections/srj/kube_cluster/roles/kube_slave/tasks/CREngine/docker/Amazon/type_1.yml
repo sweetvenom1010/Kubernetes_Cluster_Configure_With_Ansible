@@ -1,0 +1,5 @@
+- name: "Install docker on {{ ansible_facts.distribution }}"
+  package:
+          name: "docker"
+          state: present
+  register: docker_pkg_status

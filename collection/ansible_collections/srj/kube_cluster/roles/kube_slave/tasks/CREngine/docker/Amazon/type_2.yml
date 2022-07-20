@@ -1,0 +1,2 @@
+- name: "Install docker on {{ ansible_facts.distribution }} with --nobest option"
+  command: "yum install docker -y --nobest"

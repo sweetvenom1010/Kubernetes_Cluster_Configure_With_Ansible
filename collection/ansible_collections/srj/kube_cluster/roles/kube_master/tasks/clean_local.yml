@@ -1,0 +1,8 @@
+- name: "Destory Intermidiate Token File On LocalHost"
+  file:
+          path: "kubernetes/vars/token.json"
+          state: absent
+- name: "Destory kubeconfig file On LocalHost(Controller)"
+  file:
+          path: "kubernetes/files/admin.conf"
+          state: absent
